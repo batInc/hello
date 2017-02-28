@@ -1,7 +1,6 @@
 language: java
 
-install:
-  - ./mvnw --version
+install: /bin/true 
 
 jdk:
     - oraclejdk8
