@@ -1,3 +1,5 @@
+language: java
+
 deploy:
   provider: s3
   access_key_id: AKIAILGO3UX3D23FZNUQ
