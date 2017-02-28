@@ -1,6 +1,7 @@
 language: java
 
-install: mvn install
+install: mvn 
+dependency:resolve
 
 jdk:
     - oraclejdk8
