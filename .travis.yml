@@ -1,3 +1,8 @@
-language: java
-script: ant main
-
+deploy:
+  provider: s3
+  access_key_id: AKIAILGO3UX3D23FZNUQ
+  secret_access_key: 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
+  bucket: "S3 Bucket"
+  skip_cleanup: true
+  local-dir: src/as3
+  region: us-east-1
