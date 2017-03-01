@@ -1,4 +1,6 @@
-public class Calc {
+package org.proofguru.com;
+
+public class Calculator {
 
 	public int add(int x, int y) {
 		return x + y;

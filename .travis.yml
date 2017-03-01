@@ -1,10 +1,10 @@
 language: java
 
-deploy:
-  provider: s3
-  access_key_id: AKIAILGO3UX3D23FZNUQ
-  secret_access_key: 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
-  bucket: "S3 Bucket"
-  skip_cleanup: true
-  local-dir: src/as3
-  region: us-east-1
+jdk:
+    - oraclejdk8
+
+script:
+    - mvn cobertura:cobertura
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t 21a4dd3d-7e31-40b4-80a6-c11f473d81fe
