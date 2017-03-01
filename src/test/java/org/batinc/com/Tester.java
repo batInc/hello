@@ -5,7 +5,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class TesterEcho 
+public class Tester 
     extends TestCase
 {
     /**
@@ -13,7 +13,7 @@ public class TesterEcho
      *
      * @param testName name of the test case
      */
-    public TesterEcho( String testName )
+    public Tester( String testName )
     {
         super( testName );
     }
