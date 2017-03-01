@@ -1,4 +1,3 @@
-package org.proofguru.com;
 
 public class Calculator {
 
