@@ -8,3 +8,13 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 21a4dd3d-7e31-40b4-80a6-c11f473d81fe
+  
+deploy:
+  provider: s3
+  access_key_id: AKIAILGO3UX3D23FZNUQ
+  secret_access_key: 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
+  bucket: batinc-bucket
+  endpoint: http://batinc-bucket.s3-website-us-east-1.amazonaws.com
+  skip_cleanup: true
+  local-dir: src/amazonS3
+  region: us-west-2
